@@ -1,0 +1,20 @@
+[GENERATED OBJECT FILE]
+b__exemple_integer_io.o
+[PROJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TP5/tp05.gpr
+20221012125758 df5157bb1cc3944482b9f960cb40d4b4
+[BOUND OBJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TP5/piles.o
+/home/lae/Documents/Work/CompSci/PIM/TP5/integer_io.o
+/home/lae/Documents/Work/CompSci/PIM/TP5/exemple_integer_io.o
+[GENERATED SOURCE FILES]
+b__exemple_integer_io.ads
+b__exemple_integer_io.adb
+b__exemple_integer_io.ali
+[RESULTING OPTIONS]
+-L/home/lae/Documents/Work/CompSci/PIM/TP5/
+-L/home/lae/Documents/Work/CompSci/PIM/TP5/
+-L/usr/lib/gcc/x86_64-linux-gnu/12/adalib/
+-shared
+-lgnat-12
+-ldl

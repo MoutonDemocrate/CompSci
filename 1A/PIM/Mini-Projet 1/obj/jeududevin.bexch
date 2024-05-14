@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__jeududevin.o
+[PROJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/Mini-Projet 1/jeududevin.gpr
+20230927090701 08d66479bb97c665e53c503e06ed2710
+[BOUND OBJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/Mini-Projet 1/obj/jeududevin.o
+[GENERATED SOURCE FILES]
+b__jeududevin.ads
+b__jeududevin.adb
+b__jeududevin.ali
+[RESULTING OPTIONS]
+-L/home/lae/Documents/Work/CompSci/PIM/Mini-Projet 1/obj/
+-L/home/lae/Documents/Work/CompSci/PIM/Mini-Projet 1/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/12/adalib/
+-shared
+-lgnat-12
+-ldl

@@ -1,0 +1,46 @@
+# Programmation Impérative <br> $TD\ IV$
+
+## Exercice I
+
+**1)** Types nécessaires :
+
+> - x : `Entier`
+> - y : `Entier`
+> - r : `Enum` / `StateMachine`
+
+On peut regrouper les deux variables de position en un `Vector2` de position, et spécifier l'énumération / state machine.
+
+**2)** On peut utiliser un `Boolean` ou une énumération / state machine à deux états pour modéliser les cases.
+<br>
+Pour le tableau, on peut utiliser une `Array` à deux dimensions.
+
+**3)** 
+
+```
+procedure Avancer ( robot : in/out T_rob , env : in/out T_env )
+"""
+	pre : robot.r = Est AND 
+		  1 <= robot.pos.x <= env.capacité.x AND
+		  1 <= robot.pos.y <= env.capacité.y AND
+		  env.isFree(robot.pos) = true
+		  
+	post : robot.pos.x = capacité.x
+"""
+```
+
+
+## Exercice II
+
+1) 
+
+```c#
+func Afficher (tab : in T_tab) {
+	print("[")
+	for val in tab :
+		print(Str(val))
+		print(",")
+	print("]")
+}
+```
+
+R0 : **Comment** faire des raffinages stupides et inutiles.

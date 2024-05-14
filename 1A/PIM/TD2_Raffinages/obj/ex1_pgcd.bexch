@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__ex1_pgcd.o
+[PROJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr
+20230920065844 0aab08e526b8ff1173ec24e314c5a833
+[BOUND OBJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/ex1_pgcd.o
+[GENERATED SOURCE FILES]
+b__ex1_pgcd.ads
+b__ex1_pgcd.adb
+b__ex1_pgcd.ali
+[RESULTING OPTIONS]
+-L/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/
+-L/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/12/adalib/
+-shared
+-lgnat-12
+-ldl

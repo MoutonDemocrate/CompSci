@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project>
+    <vfs_file />
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 10" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 8" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 25" line=" 10" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 8" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 54" line=" 14" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/TD/PIM/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 29" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 12" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/usr/lib/gcc/x86_64-linux-gnu/12/adainclude/a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 464" >
+      <vfs_project />
+      <vfs_file>/usr/lib/gcc/x86_64-linux-gnu/12/adainclude/a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 12" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 32" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 4" line=" 13" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/main.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 33" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/Ex1_PGCD.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 464" >
+      <vfs_project />
+      <vfs_file>/usr/lib/gcc/x86_64-linux-gnu/12/adainclude/a-textio.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 33" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/Ex1_PGCD.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project />
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_file>
+    </file_marker>
+    <file_marker column=" 14" line=" 33" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/Ex1_PGCD.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 4" line=" 3" >
+      <vfs_project>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr</vfs_project>
+      <vfs_file>/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/src/ex1_pgcd.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>

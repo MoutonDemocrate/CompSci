@@ -1,0 +1,18 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/td2_raffinages.gpr
+20230920063349 83ea500086793177d600885e1d940270
+[BOUND OBJECT FILES]
+/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/
+-L/home/lae/Documents/Work/CompSci/PIM/TD2_Raffinages/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/12/adalib/
+-shared
+-lgnat-12
+-ldl

@@ -1,0 +1,110 @@
+V "GNAT Lib v12"
+A -gnatA
+A -gnatwa
+A -gnata
+A -g
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_IO
+RV NO_IMPLEMENTATION_PRAGMAS
+
+U integer_io%b		integer_io.adb		60c6c8a8 NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.characters%s	a-charac.ads		a-charac.ali
+W ada.characters.handling%s  a-chahan.adb	a-chahan.ali
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W piles%s		piles.adb		piles.ali
+Z system.assertions%s	s-assert.adb		s-assert.ali
+
+U integer_io%s		integer_io.ads		c898b8a6 EE NE OO PK
+Z ada.strings.text_buffers%s  a-sttebu.adb	a-sttebu.ali
+
+D ada.ads		20230508121439 76789da1 ada%s
+D a-assert.ads		20230508121439 ba465f5c ada.assertions%s
+D a-charac.ads		20230508121439 2d3ec45b ada.characters%s
+D a-chahan.ads		20230508121439 bbd5c0b9 ada.characters.handling%s
+D a-chlat1.ads		20230508121439 e0d72e76 ada.characters.latin_1%s
+D a-except.ads		20230508121439 2a7d8d70 ada.exceptions%s
+D a-ioexce.ads		20230508121439 40018c65 ada.io_exceptions%s
+D a-stream.ads		20230508121439 119b8fb3 ada.streams%s
+D a-string.ads		20230508121439 90ac6797 ada.strings%s
+D a-sttebu.ads		20230508121439 18209c64 ada.strings.text_buffers%s
+D a-stuten.ads		20230508121439 33c54060 ada.strings.utf_encoding%s
+D a-tags.ads		20230508121439 9eaa38c6 ada.tags%s
+D a-textio.ads		20230508121439 deada98a ada.text_io%s
+D a-unccon.ads		20230508121439 0e9b276f ada.unchecked_conversion%s
+D integer_io.ads	20230903155222 c898b8a6 integer_io%s
+D integer_io.adb	20230903155222 359c8672 integer_io%b
+D interfac.ads		20230508121439 edec285f interfaces%s
+D i-cstrea.ads		20230508121439 e53d8b8e interfaces.c_streams%s
+D piles.ads		20230903155223 f8ba9f4f piles%s
+D piles.adb		20230903155222 f5008280 piles%b
+D system.ads		20230508121439 a2da961d system%s
+D s-assert.ads		20230508121439 9c4520c7 system.assertions%s
+D s-crtl.ads		20230508121439 8a0692f8 system.crtl%s
+D s-exctab.ads		20230508121439 91bef6ef system.exception_table%s
+D s-ficobl.ads		20230508121439 dc5161d4 system.file_control_block%s
+D s-parame.ads		20230508121439 d494a4a6 system.parameters%s
+D s-putima.ads		20230508121439 4e095881 system.put_images%s
+D s-secsta.ads		20230508121439 62cd9202 system.secondary_stack%s
+D s-soflin.ads		20230508121439 df77073e system.soft_links%s
+D s-stache.ads		20230508121439 0b81c1fe system.stack_checking%s
+D s-stalib.ads		20230508121439 1c9580f6 system.standard_library%s
+D s-stoele.ads		20230508121439 6d8e1ff4 system.storage_elements%s
+D s-stoele.adb		20230508121439 8f5a9db6 system.storage_elements%b
+D s-traent.ads		20230508121439 c81cbf8c system.traceback_entries%s
+D s-unstyp.ads		20230508121439 fa2a7f59 system.unsigned_types%s
+D s-wchcon.ads		20230508121439 d9032363 system.wch_con%s
+D unchconv.ads		20230508121439 ca2f9e18 unchecked_conversion%s
+G a e
+G c Z s b [afficher integer_io 8 15 none]
+G c Z s b [saisir integer_io 17 15 none]
+G c Z b b [consommer_blancs integer_io 61 15 none]
+G r i none [afficher integer_io 8 15 none] [piles standard 7 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 16|1r6 1r36 2r6 2r36
+X 3 a-charac.ads
+16K13*Characters 18e19 16|2r10 2r40
+X 4 a-chahan.ads
+43K24*Handling 453e28 16|2w21 2r51
+120V13*Is_Digit{boolean} 16|91s12 102s48
+X 13 a-textio.ads
+58K13*Text_IO 727e16 16|1w10 1r40
+272U14*Skip_Line 16|70s17
+380U14*Get 16|72s17 100s17
+391U14*Put 16|49s13
+405U14*Look_Ahead 16|66s9 76s13 101s17
+X 15 integer_io.ads
+4K9*Integer_IO 21l5 21e15 16|6b14 110l5 110t15
+8U15*Afficher 8>25 16|9b15 55l9 55t17
+8i25 N{integer} 9r16 16|9b25 24r19
+17U15*Saisir 17<23 16|83b15 107l9 107t15
+17i23 N{integer} 18r17 18r32 16|83b23 93m13 97m17 97r22 105m13
+X 16 integer_io.adb
+12K17 Piles_Character[19|7] 14r13
+16i9 Nombre{integer} 24m9 27r22 37m13 37r23 38r19 40r24
+17i9 Unite{integer} 27m13 30r60
+18e9 Chiffre{character} 30m13 34r32 46m13 49r18
+19r9 Chiffres{19|9R10[12]} 23m22 33r44 34m22 34r22 41r38 46r32 52m22 52r22
+. 53r29
+61U15 Consommer_Blancs 61b15 61<33 80l9 80t25 89s9
+61e33 Prochain_Caractere{character} 62r17 66m21 67r36 72m22 76m25 79r45
+64b9 Fin_De_Ligne{boolean} 66m41 67r15 69r16 76m45 79r28
+84e9 C{character} 89m27 91r22 96r43 100m22 101m29 102r58
+85b9 Fin_De_Ligne{boolean} 101m32 102r23
+86i9 Chiffre{integer} 96m17 97r31
+X 19 piles.ads
+7k9*Piles 16|3w6 13r17 19|65e10
+9R10 T_Pile 16|19r20[12]
+15U15 Initialiser 16|23s9[12]
+20V14 Est_Vide{boolean} 16|41s28[12] 53s19[12]
+24V14 Est_Pleine{boolean} 16|33s32[12]
+28V14 Sommet{character} 16|46s24[12]
+33U15 Empiler 16|34s13[12]
+39U15 Depiler 16|52s13[12]
+

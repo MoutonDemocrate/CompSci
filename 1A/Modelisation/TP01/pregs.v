@@ -1,0 +1,1 @@
+Theorem Thm_O : A /\ B -> B /\ A
