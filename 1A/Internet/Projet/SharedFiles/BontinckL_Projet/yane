@@ -68,7 +68,7 @@ else
 fi
 
 BASEDIR=$PWD
-DEBUG=False
+DEBUG=True
 VERBOSE=False
 NET_CONFIG_FILE=yane.yml
 TMP_CFG_FILE=./yane.$$

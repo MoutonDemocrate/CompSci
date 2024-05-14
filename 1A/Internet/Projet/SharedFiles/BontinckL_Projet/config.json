@@ -1,0 +1,151 @@
+{
+    "Name": "Bontinck_Laerian_Projet_Internet",
+    "Hosts": [
+        {
+            "Name": "Box1",
+            "Type": "DHCP",
+            "Interfaces": "2"
+        },
+        {
+            "Name": "Client1",
+            "Type": "Client",
+            "Interfaces": "1"
+        },
+        {
+            "Name": "Client2",
+            "Type": "Client",
+            "Interfaces": "1"
+        },
+        {
+            "Name": "ServeurWebClient",
+            "Type": "WEB",
+            "Interfaces": "1"
+        },
+        {
+            "Name": "Switch1",
+            "Type": "Switch",
+            "Interfaces": "16"
+        },
+        {
+            "Name": "Box2",
+            "Type": "DHCP",
+            "Interfaces": "2"
+        },
+        {
+            "Name": "FAI",
+            "Type": "Routeur",
+            "Interfaces": "3"
+        },
+        {
+            "Name": "Switch2",
+            "Type": "Switch",
+            "Interfaces": "16"
+        },
+        {
+            "Name": "R1",
+            "Type": "Routeur",
+            "Interfaces": "2"
+        },
+        {
+            "Name": "R2",
+            "Type": "Routeur",
+            "Interfaces": "2"
+        },
+        {
+            "Name": "RouteurServices",
+            "Type": "Routeur",
+            "Interfaces": "3"
+        },
+        {
+            "Name": "RouteurReseaux",
+            "Type": "Routeur",
+            "Interfaces": "3"
+        },
+        {
+            "Name": "ServeurWEB",
+            "Type": "WEB",
+            "Interfaces": "1"
+        },
+        {
+            "Name": "ServeurDNS",
+            "Type": "DNS",
+            "Interfaces": "1"
+        }
+    ],
+    "Links": [
+        {
+            "H1": "Client1",
+            "I1": "eth0",
+            "H2": "Box1",
+            "I2": "eth0"
+        },
+        {
+            "H1": "Box1",
+            "I1": "eth1",
+            "H2": "FAI",
+            "I2": "eth0"
+        },
+        {
+            "H1": "Box2",
+            "I1": "eth1",
+            "H2": "FAI",
+            "I2": "eth1"
+        },
+        {
+            "H1": "R1",
+            "I1": "eth1",
+            "H2": "RouteurServices",
+            "I2": "eth0"
+        },
+        {
+            "H1": "R2",
+            "I1": "eth1",
+            "H2": "RouteurReseaux",
+            "I2": "eth0"
+        },
+        {
+            "H1": "RouteurReseaux",
+            "I1": "eth1",
+            "H2": "RouteurServices",
+            "I2": "eth1"
+        },
+        {
+            "H1": "RouteurServices",
+            "I1": "eth2",
+            "H2": "ServeurWEB",
+            "I2": "eth0"
+        },
+        {
+            "H1": "RouteurReseaux",
+            "I1": "eth2",
+            "H2": "ServeurDNS",
+            "I2": "eth0"
+        }
+    ],
+    "Bridges": [
+        {
+            "Hosts": [
+                "Box2",
+                "Client2",
+                "ServeurWebClient"
+            ],
+            "Interfaces": [
+                "eth0",
+                "eth0",
+                "eth0"
+            ]
+        },
+        {
+            "Hosts": [
+                "R1",
+                "R2",
+                "FAI"
+            ],
+            "Interfaces": [
+                "eth0",
+                "eth0",
+                "eth2"
+            ]
+        }
+    ]
+}
