@@ -1,0 +1,13 @@
+total 80
+-rw-r--r-- 1 lae lae   975 May 25 15:08 copier.c
+-rw-rw-r-- 1 lae lae  2584 May 25 15:08 copier.o
+-rw-r--r-- 1 lae lae  1057 May 25 15:08 Makefile
+-rwxrwxr-x 1 lae lae 21760 May 25 16:15 minishell
+-rw-r--r-- 1 lae lae  4933 May 25 16:15 minishell.c
+-rw-rw-r-- 1 lae lae  7136 May 25 16:15 minishell.o
+-rw-rw-r-- 1 lae lae     0 May 25 17:02 out.txt
+drwxrwxr-x 2 lae lae  4096 May 25 15:19 rapport
+-rw-r--r-- 1 lae lae  5360 May 25 15:08 readcmd.c
+-rw-r--r-- 1 lae lae  2156 May 25 15:08 readcmd.h
+-rw-rw-r-- 1 lae lae  6568 May 25 15:08 readcmd.o
+-rw-r--r-- 1 lae lae  2012 May 25 15:08 test_readcmd.c

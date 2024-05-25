@@ -17,7 +17,7 @@ void treat_all(int numsign) {
   while ((pid = waitpid(-1, &status, WNOHANG)) > 0) {
     nbcmd--;
     if (WIFEXITED(status)) {
-      printf("\n(Process n°%d manually terminated)\n", pid);
+      printf("\n(Process n°%d terminated)\n", pid);
       pid_fg = 0;
     } else if (WIFSIGNALED(status)) {
     } else if (WIFSTOPPED(status)) {
@@ -34,13 +34,13 @@ void treat_c(int numsign) {
   if (pid_fg == 0) {
     printf("\n(No process to kill...).\n");
   } else {
-    printf("\n(Process n°%d terminated)\n", pid_fg);
+    printf("\n(Process n°%d manually terminated)\n", pid_fg);
     kill(pid_fg, SIGKILL);
     pid_fg = 0;
   }
 }
 void treat_z(int numsign) {
-  printf("\n(Process n°%d manually terminated)\n", pid_fg);
+  printf("\n(Process n°%d manually paused)\n", pid_fg);
   kill(pid_fg, SIGSTOP);
   pid_fg = 0;
 }
