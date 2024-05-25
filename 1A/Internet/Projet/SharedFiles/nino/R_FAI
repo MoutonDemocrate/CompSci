@@ -1,0 +1,21 @@
+#!/bin/bash
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip link set dev eth2 up
+ip addr add 31.5.253.35/27 dev eth0
+ip addr add 31.5.253.17/28 dev eth1
+ip addr add 31.5.253.1/28 dev eth2
+# Routage par rip
+systemctl start quagga
+(echo "zebra";
+echo "en";
+echo "conf t";
+echo "router rip"; 
+echo "network 31.5.253.16/28";
+echo "network 31.5.253.0/28";
+echo "network 31.5.253.32/27";
+#echo "exit";
+#echo "exit";
+#echo "show ip rip"; 
+sleep .1;) | telnet localhost ripd
+

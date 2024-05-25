@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Starting RouteurDNS..."
-
-
-ip link set dev eth0 up
-ip addr add 8.27.4.114/28 dev eth0

@@ -1,7 +1,0 @@
-#!/bin/bash
-
-echo "Starting ServeurWEB..."
-
-
-ip link set dev eth0 up
-ip addr add 8.27.4.98/28 dev eth0

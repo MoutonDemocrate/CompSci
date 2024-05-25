@@ -1,0 +1,40 @@
+#!/bin/bash
+ip link set dev eth0 up
+ip link set dev eth1 up
+ip addr add 31.5.253.161/27 dev eth0
+ip addr add 31.5.253.130/27 dev eth1
+
+# Routage par rip
+systemctl start quagga
+(echo "zebra";
+echo "en";
+echo "conf t";
+echo "router rip"; 
+echo "network 31.5.253.128/27";
+echo "network 31.5.253.160/27";
+sleep .1;) | telnet localhost ripd
+
+# Refuser toutes les operations
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+
+# Autoriser les pings
+iptables -t filter -A INPUT -p icmp -j ACCEPT
+iptables -t filter -A OUTPUT -p icmp -j ACCEPT
+iptables -t filter -A FORWARD -p icmp -j ACCEPT
+
+# Autoriser le protocole RIP
+iptables -A INPUT -p udp --dport 520 -j ACCEPT
+iptables -A OUTPUT -p udp --dport 520 -j ACCEPT
+iptables -A FORWARD -p udp --dport 520 -j ACCEPT
+
+# Autoriser le service DNS
+iptables -t filter -A FORWARD -d 31.5.253.226/27 -p udp --dport 53 -j ACCEPT
+iptables -t filter -A FORWARD -s 31.5.253.226/27 -p udp --sport 53 -j ACCEPT
+
+# Autoriser le service WEB
+iptables -t filter -A FORWARD -p tcp --dport 80 -j ACCEPT
+iptables -t filter -A FORWARD -p tcp --sport 80 -j ACCEPT
+iptables -t filter -A INPUT -p tcp --dport 80 -j ACCEPT
+iptables -t filter -A OUTPUT -p tcp --sport 80 -j ACCEPT

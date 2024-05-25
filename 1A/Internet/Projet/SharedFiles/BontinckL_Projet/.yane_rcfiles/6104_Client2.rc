@@ -1,2 +1,0 @@
-#!/bin/bash
-PS1="\u@Client2:[\W]# "
