@@ -1,1 +1,1 @@
--(-(-x))+(-(+x)) true + true * false (true * false) + true
+(1)+(1)

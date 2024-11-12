@@ -1,0 +1,80 @@
+
+type token = 
+  | UL_RIGHT_BRACE
+  | UL_PACKAGE
+  | UL_LEFT_BRACE
+  | UL_IDENT_PACKAGE of (
+# 16 "Parser.mly"
+       (string)
+# 10 "Parser__mock.ml.mock"
+)
+  | UL_FIN
+
+# 1 "Parser.mly"
+  
+
+(* Partie recopiee dans le fichier CaML genere. *)
+(* Ouverture de modules exploites dans les actions *)
+(* Declarations de types, de constantes, de fonctions, d'exceptions exploites dans les actions *)
+
+
+# 22 "Parser__mock.ml.mock"
+
+let menhir_begin_marker =
+  0
+
+and (xv_package, xv_internal_package) =
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 30 "Parser.mly"
+                          _2
+# 31 "Parser__mock.ml.mock"
+   : unit) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
+# 30 "Parser.mly"
+         _1
+# 35 "Parser__mock.ml.mock"
+   : 'tv_internal_package) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : (
+# 23 "Parser.mly"
+      (unit)
+# 39 "Parser__mock.ml.mock"
+  ) ->
+    (
+# 30 "Parser.mly"
+                                  ( (print_endline "package : internal_package FIN") )
+# 44 "Parser__mock.ml.mock"
+     : 'tv_package) in
+  let _ = fun (_startpos : Lexing.position) (_endpos : Lexing.position) (_endpos__0_ : Lexing.position) (_symbolstartpos : Lexing.position) (_startofs : int) (_endofs : int) (_endofs__0_ : int) (_symbolstartofs : int) (_sloc : Lexing.position * Lexing.position) (_loc : Lexing.position * Lexing.position) (
+# 32 "Parser.mly"
+                                                            _4
+# 49 "Parser__mock.ml.mock"
+   : unit) (_startpos__4_ : Lexing.position) (_endpos__4_ : Lexing.position) (_startofs__4_ : int) (_endofs__4_ : int) (_loc__4_ : Lexing.position * Lexing.position) (
+# 32 "Parser.mly"
+                                              _3
+# 53 "Parser__mock.ml.mock"
+   : unit) (_startpos__3_ : Lexing.position) (_endpos__3_ : Lexing.position) (_startofs__3_ : int) (_endofs__3_ : int) (_loc__3_ : Lexing.position * Lexing.position) (
+# 32 "Parser.mly"
+                             _2
+# 57 "Parser__mock.ml.mock"
+   : (
+# 16 "Parser.mly"
+       (string)
+# 61 "Parser__mock.ml.mock"
+  )) (_startpos__2_ : Lexing.position) (_endpos__2_ : Lexing.position) (_startofs__2_ : int) (_endofs__2_ : int) (_loc__2_ : Lexing.position * Lexing.position) (
+# 32 "Parser.mly"
+                  _1
+# 65 "Parser__mock.ml.mock"
+   : unit) (_startpos__1_ : Lexing.position) (_endpos__1_ : Lexing.position) (_startofs__1_ : int) (_endofs__1_ : int) (_loc__1_ : Lexing.position * Lexing.position) : 'tv_internal_package ->
+    
+# 32 "Parser.mly"
+                                                                            ( (print_endline "package : package IDENT_PACKAGE { }") )
+# 70 "Parser__mock.ml.mock"
+     in
+  ((let rec diverge() = diverge() in diverge()) : 'tv_package * 'tv_internal_package)
+
+and menhir_end_marker =
+  0
+
+# 34 "Parser.mly"
+  
+
+
+# 81 "Parser__mock.ml.mock"

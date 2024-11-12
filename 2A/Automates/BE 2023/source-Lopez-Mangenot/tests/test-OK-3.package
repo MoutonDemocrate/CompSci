@@ -1,0 +1,6 @@
+package a {
+	interface A { }
+	package b {
+		interface B extends a.A { }
+	}
+}

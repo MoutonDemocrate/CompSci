@@ -1,0 +1,13 @@
+type token =
+    UL_PAR_OPEN
+  | UL_PAR_CLOSE
+  | UL_IDENT of string
+  | UL_FIN
+  | UL_ENTIER of string
+  | PT
+val menhir_begin_marker : int
+val xv_scheme : unit
+val xv_expression_par : unit
+val xv_expression_et : unit
+val xv_expression : unit
+val menhir_end_marker : int

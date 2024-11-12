@@ -1,0 +1,10 @@
+type token =
+    UL_RIGHT_BRACE
+  | UL_PACKAGE
+  | UL_LEFT_BRACE
+  | UL_IDENT_PACKAGE of string
+  | UL_FIN
+val menhir_begin_marker : int
+val xv_package : unit
+val xv_internal_package : unit
+val menhir_end_marker : int
