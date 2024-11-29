@@ -4,21 +4,26 @@ import re
 from unidecode import unidecode
 
 ## Create JSON tree of folders
-#### YEAR
-wd : str
-tree : dict = {}
-for year in (os.listdir('.')) :
-	wd = "."
-	if not os.path.isfile(os.path.join(wd, year)) :
-		if re.search("(.+)A", year) :
-			tree[year] = {}
-			for course in (os.listdir(os.path.join(wd, year))) :
-					if not os.path.isfile(os.path.join(wd, year, course)) :
-						course_p = unidecode(course)
-						if not course_p[0] in [' ','.'] :
-							tree[year][course_p] = {}
-							print(wd)
-							for section in (os.listdir(os.path.join(wd, year, course))) :
-								tree[year][course_p][section] = {}
 
-print(json.dumps(tree, indent = 4))
+def get_files(
+	path : str, 
+	r : bool = False, 
+	ignore_case : bool = False
+	) -> dict:
+
+	if os.path.exists(path) :
+		objs = os.listdir(path)
+		dict = {}
+		for obj in objs :
+			if os.path.isfile(os.path.join(path, obj)) :
+				name, ext = os.path.splitext(obj)
+				if name[0] != "." or ignore_case:
+					dict[name] = ext
+			elif os.path.isdir(os.path.join(path, obj)) :
+				if obj[0] != "." or ignore_case:
+					dict[obj] = get_files(os.path.join(path, obj), r = True) if r else {}
+		return dict
+	else :
+		raise Exception("This path is not a valid path !")
+
+print(json.dumps(get_files(".", True), indent = 4))

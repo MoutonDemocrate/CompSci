@@ -1,0 +1,9 @@
+; (library
+;  (name tp10_etu)
+;  (libraries graphics)
+;  (inline_tests)
+;  (preprocess
+;   (pps ppx_inline_test)))
+(executable 
+ (name tp10_etu)
+ (libraries graphics))

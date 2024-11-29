@@ -69,9 +69,9 @@ end
 
 type 'a perfect_tree = | Empty | Node of 'a * ('a * 'a) perfect_tree
 
-type ('a, _) ptree =
-  | Empty : ('a, zero)
-  | Node : 'a * ('a*'a,'p) -> ('a, 'p succ) ptree
+(* type ('a, 'b) ptree =
+  | Empty : 'a zero
+  | Node : 'a * ('a*'a,'p) -> ('a, 'p succ) ptree *)
 
 let rec split : type a. (a * a) perfect_tree -> a perfect_tree * a perfect_tree =
   fun arb ->
@@ -80,4 +80,4 @@ let rec split : type a. (a * a) perfect_tree -> a perfect_tree * a perfect_tree 
     | Node((t1,t2),q) -> let (q1,q2) = split q in
                           Node(t1,q1),Node(t2,q2) 
 
-let rec merge : type a p. (a, p) perfect_tree -> (a, p) perfect_tree -> (a*a,p) perfect_tree =
+(* let rec merge : type a p. (a, p) perfect_tree -> (a, p) perfect_tree -> (a*a,p) perfect_tree = failwith("Bonsoir") *)
