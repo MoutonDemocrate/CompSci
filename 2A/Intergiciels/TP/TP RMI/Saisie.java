@@ -1,0 +1,112 @@
+/* ------------------------------------------------------- 
+		Les packages Java qui doivent etre importes.
+*/
+import java.awt.*;
+import java.awt.event.*;
+import java.rmi.*;
+import javax.swing.*;
+
+
+
+/* ------------------------------------------------------- 
+		Implementation de l'application
+*/
+
+public class Saisie extends JFrame {
+	private static final long serialVersionUID = 1;
+	TextField nom, email;
+	Choice carnets;
+	Label message;
+	public Saisie() {
+		setSize(300,200);
+		setLayout(new GridLayout(6,2));
+		add(new Label("  Nom : "));
+		nom = new TextField(30);
+		add(nom);
+		add(new Label("  Email : "));
+		email = new TextField(30);
+		add(email);
+		add(new Label("  Carnet : "));
+		carnets = new Choice();
+		carnets.addItem("carnet1");
+		carnets.addItem("carnet2");
+		add(carnets);
+		add(new Label(""));
+		add(new Label(""));
+		Button Abutton = new Button("Ajouter");
+		Abutton.addActionListener(new AButtonAction());
+		add(Abutton);
+		Button Cbutton = new Button("Consulter");
+		Cbutton.addActionListener(new CButtonAction());
+		add(Cbutton);
+		Button PrintAllbutton = new Button("Print All");
+		PrintAllbutton.addActionListener(new PrintAllbuttonAction());
+		add(PrintAllbutton);
+		message = new Label();
+		add(message);
+	}
+
+	// La reaction au bouton Consulter
+	class CButtonAction implements ActionListener {
+		public void actionPerformed(ActionEvent ae) {
+			String n, c;
+			n = nom.getText();
+			c = carnets.getSelectedItem();
+			message.setText("Consulter("+n+","+c+")        ");
+			try {
+				Carnet carnet = (Carnet)Naming.lookup("rmi://localhost:4000/"+c);
+				RFiche rf = carnet.Consulter(n, true);
+				System.out.println("Hey, rf = "+rf.toString());
+				email.setText((rf == null) ? "" : rf.getEmail());
+			} catch (Exception ex) {
+				message.setText("RMI call Consulter aborted");
+				ex.printStackTrace();
+			}
+		}
+	}
+	// La reaction au bouton Ajouter
+	class AButtonAction implements ActionListener {
+		public void actionPerformed(ActionEvent ae) {
+			String n, e, c;
+			n = nom.getText();
+			e = email.getText();
+			c = carnets.getSelectedItem();
+			message.setText("Ajouter("+n+","+e+","+c+")");
+			try {
+				SFiche sf = new SFicheImpl(n, e); 
+				Carnet carnet = (Carnet)Naming.lookup("rmi://localhost:4000/"+c);
+				carnet.Ajouter(sf);
+				nom.setText("");
+				email.setText("");
+			} catch (Exception ex) {
+				message.setText("RMI call Ajouter aborted");
+				ex.printStackTrace();
+			}
+		}
+	}
+	// La reaction au bouton PrintAll
+	class PrintAllbuttonAction implements ActionListener {
+		public void actionPerformed(ActionEvent ae) {
+			String c;
+			c = carnets.getSelectedItem();
+			message.setText("PrintAll("+c+")");
+			try {
+				Carnet carnet = (Carnet)Naming.lookup("rmi://localhost:4000/"+c);
+				String carnetContent = carnet.MakeString(false);
+				System.out.println(carnetContent);
+			} catch (Exception ex) {
+				message.setText("RMI call Consulter aborted");
+				ex.printStackTrace();
+			}
+		}
+	}
+	
+	public static void main(String args[]) {
+		Saisie s = new Saisie();
+		s.setSize(400,200);
+  		s.setVisible(true);
+	}
+	
+}
+
+
