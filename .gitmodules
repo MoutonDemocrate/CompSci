@@ -1,3 +1,6 @@
 [submodule "2A/ProjetDR"]
 	path = 2A/ProjetDR
 	url = https://github.com/MoutonDemocrate/ProjetDR.git
+[submodule "2A/Computer Graphics/TP"]
+	path = 2A/Computer Graphics/TP
+	url = https://github.com/MoutonDemocrate/TP_CG/
