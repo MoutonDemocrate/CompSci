@@ -1,0 +1,366 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.20 of Day Month 20?? (rev: 4570af4)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 45 and seed 9092743818183347954 with 1 worker on 4 cores with 1733MB heap and 64MB offheap memory [pid: 48420] (Linux 6.13.6-arch1-1 amd64, Arch Linux 11.0.26 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /home/lae/Documents/Work/N7/2A/SysTrans/TP/TP3/philosophes_fork.tla
+Parsing file /tmp/tlc-10445189294404059725/Naturals.tla (jar:file:/home/lae/.vscode-oss/extensions/alygin.vscode-tlaplus-nightly-2024.8.1506-universal/tools/tla2tools.jar!/tla2sany/StandardModules/Naturals.tla)
+Semantic processing of module Naturals
+Semantic processing of module philosophes_fork
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2025-03-11 11:56:55)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2140:3 @!@!@
+The subscript of the next-state relation specified by the specification
+does not seem to contain the state variable hasLeftFork
+@!@!@ENDMSG 2140 @!@!@
+@!@!@STARTMSG 2140:3 @!@!@
+The subscript of the next-state relation specified by the specification
+does not seem to contain the state variable forkState
+@!@!@ENDMSG 2140 @!@!@
+@!@!@STARTMSG 2140:3 @!@!@
+The subscript of the next-state relation specified by the specification
+does not seem to contain the state variable hasRightFork
+@!@!@ENDMSG 2140 @!@!@
+@!@!@STARTMSG 2212:0 @!@!@
+Implied-temporal checking--satisfiability problem has 6 branches.
+@!@!@ENDMSG 2212 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2025-03-11 11:56:56.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2114:1 @!@!@
+Deadlock reached.
+@!@!@ENDMSG 2114 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ hasLeftFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "D" @@ 1 :> "D" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "T" @@ 1 :> "T" @@ 2 :> "T" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <demander(0) line 60, col 5 to line 64, col 44 of module philosophes_fork>
+/\ hasLeftFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "D" @@ 1 :> "D" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "T" @@ 2 :> "T" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <prendre_fork_g(0) line 67, col 5 to line 73, col 54 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "D" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "T" @@ 2 :> "T" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <demander(1) line 60, col 5 to line 64, col 44 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "D" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "T" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <prendre_fork_g(1) line 67, col 5 to line 73, col 54 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "T" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <demander(2) line 60, col 5 to line 64, col 44 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "D" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "H" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <prendre_fork_g(2) line 67, col 5 to line 73, col 54 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> TRUE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "U" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "H" @@ 3 :> "T" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+8: <demander(3) line 60, col 5 to line 64, col 44 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> TRUE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "U" @@ 3 :> "D" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "H" @@ 3 :> "H" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+9: <prendre_fork_g(3) line 67, col 5 to line 73, col 54 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> TRUE @@ 3 :> TRUE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "U" @@ 3 :> "U" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "H" @@ 3 :> "H" @@ 4 :> "T")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+10: <demander(4) line 60, col 5 to line 64, col 44 of module philosophes_fork>
+/\ hasLeftFork = (0 :> TRUE @@ 1 :> TRUE @@ 2 :> TRUE @@ 3 :> TRUE @@ 4 :> FALSE)
+/\ forkState = (0 :> "U" @@ 1 :> "U" @@ 2 :> "U" @@ 3 :> "U" @@ 4 :> "D")
+/\ hasRightFork = (0 :> FALSE @@ 1 :> FALSE @@ 2 :> FALSE @@ 3 :> FALSE @@ 4 :> FALSE)
+/\ etat = (0 :> "H" @@ 1 :> "H" @@ 2 :> "H" @@ 3 :> "H" @@ 4 :> "H")
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2025-03-11 11:56:58
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 52, col 1 to line 52, col 4 of module philosophes_fork>: 3:3
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 53, col 15 to line 53, col 41 of module philosophes_fork: 3:15
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 53, col 22 to line 53, col 27 of module philosophes_fork: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 54, col 20 to line 54, col 41 of module philosophes_fork: 3:15
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 54, col 27 to line 54, col 31 of module philosophes_fork: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  line 55, col 22 to line 55, col 45 of module philosophes_fork: 3:15
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 55, col 29 to line 55, col 34 of module philosophes_fork: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 56, col 8 to line 56, col 46 of module philosophes_fork: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2775:0 @!@!@
+  |line 56, col 23 to line 56, col 46 of module philosophes_fork: 3:15
+@!@!@ENDMSG 2775 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 56, col 30 to line 56, col 35 of module philosophes_fork: 3
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<demander line 59, col 1 to line 59, col 11 of module philosophes_fork>: 614:2145
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 60, col 8 to line 60, col 25 of module philosophes_fork: 8725
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 60, col 8 to line 60, col 14 of module philosophes_fork: 6580
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 60, col 18 to line 60, col 25 of module philosophes_fork: 6580
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 61, col 8 to line 61, col 26 of module philosophes_fork: 2145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 62, col 8 to line 62, col 28 of module philosophes_fork: 2145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 63, col 8 to line 63, col 29 of module philosophes_fork: 2145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 64, col 8 to line 64, col 44 of module philosophes_fork: 2145
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<prendre_fork_g line 66, col 1 to line 66, col 17 of module philosophes_fork>: 260:1422
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 67, col 8 to line 67, col 23 of module philosophes_fork: 7992
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 67, col 8 to line 67, col 14 of module philosophes_fork: 6570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 67, col 18 to line 67, col 23 of module philosophes_fork: 6570
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 68, col 8 to line 68, col 21 of module philosophes_fork: 1422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 69, col 8 to line 69, col 29 of module philosophes_fork: 1422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 70, col 9 to line 70, col 23 of module philosophes_fork: 5527
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 70, col 10 to line 70, col 23 of module philosophes_fork: 4105
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 71, col 8 to line 71, col 38 of module philosophes_fork: 4199
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 71, col 8 to line 71, col 31 of module philosophes_fork: 2777
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 71, col 35 to line 71, col 38 of module philosophes_fork: 2777
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 72, col 8 to line 72, col 60 of module philosophes_fork: 1422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 73, col 8 to line 73, col 54 of module philosophes_fork: 1422
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<prendre_fork_d line 75, col 1 to line 75, col 17 of module philosophes_fork>: 407:1426
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 76, col 8 to line 76, col 23 of module philosophes_fork: 7988
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 76, col 8 to line 76, col 14 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 76, col 18 to line 76, col 23 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 77, col 8 to line 77, col 21 of module philosophes_fork: 1426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 78, col 8 to line 78, col 28 of module philosophes_fork: 1426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 79, col 9 to line 79, col 24 of module philosophes_fork: 5523
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 79, col 10 to line 79, col 24 of module philosophes_fork: 4097
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 80, col 8 to line 80, col 38 of module philosophes_fork: 4244
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 80, col 8 to line 80, col 31 of module philosophes_fork: 2818
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 80, col 35 to line 80, col 38 of module philosophes_fork: 2818
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 81, col 8 to line 81, col 60 of module philosophes_fork: 1426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 82, col 8 to line 82, col 56 of module philosophes_fork: 1426
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<manger line 84, col 1 to line 84, col 9 of module philosophes_fork>: 124:421
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 85, col 8 to line 85, col 23 of module philosophes_fork: 6983
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 85, col 8 to line 85, col 14 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 85, col 18 to line 85, col 23 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 86, col 8 to line 86, col 21 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 86, col 8 to line 86, col 18 of module philosophes_fork: 4097
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 86, col 20 to line 86, col 20 of module philosophes_fork: 4097
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 87, col 8 to line 87, col 28 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 88, col 8 to line 88, col 22 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 8 to line 88, col 19 of module philosophes_fork: 1328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 88, col 21 to line 88, col 21 of module philosophes_fork: 1328
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 89, col 8 to line 89, col 29 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 90, col 8 to line 90, col 44 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 91, col 8 to line 91, col 26 of module philosophes_fork: 421
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<penser line 93, col 1 to line 93, col 9 of module philosophes_fork>: 0:330
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 94, col 8 to line 94, col 23 of module philosophes_fork: 6892
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 8 to line 94, col 14 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 94, col 18 to line 94, col 23 of module philosophes_fork: 6562
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 95, col 8 to line 95, col 96 of module philosophes_fork: 330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 96, col 8 to line 96, col 57 of module philosophes_fork: 330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 97, col 8 to line 97, col 55 of module philosophes_fork: 330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 98, col 8 to line 98, col 46 of module philosophes_fork: 330
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Action line 31, col 11 to line 31, col 60 of module philosophes_fork>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 31, col 11 to line 31, col 60 of module philosophes_fork: 1406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Action line 32, col 11 to line 32, col 48 of module philosophes_fork>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 32, col 11 to line 32, col 48 of module philosophes_fork: 1406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Action line 33, col 11 to line 33, col 54 of module philosophes_fork>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 33, col 11 to line 33, col 54 of module philosophes_fork: 1406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Action line 34, col 11 to line 34, col 55 of module philosophes_fork>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 34, col 11 to line 34, col 55 of module philosophes_fork: 1406
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(11) at 2025-03-11 11:56:58: 5,655 states generated (86,467 s/min), 1,406 distinct states found (21,498 ds/min), 110 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+5655 states generated, 1406 distinct states found, 110 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 11.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 3942ms at (2025-03-11 11:56:58)
+@!@!@ENDMSG 2186 @!@!@
