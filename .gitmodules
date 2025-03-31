@@ -4,3 +4,6 @@
 [submodule "2A/Computer Graphics/TP"]
 	path = 2A/Computer Graphics/TP
 	url = https://github.com/MoutonDemocrate/TP_CG/
+[submodule "2A/Appli Web/Projet"]
+	path = 2A/Appli Web/Projet
+	url = https://github.com/baptdes/CARTEL-web-application/
