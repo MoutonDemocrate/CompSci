@@ -15,7 +15,7 @@ $f(x)$ est continue sur un compact, donc il existe une solution à $\mathscr{P}$
 \|x\|_2^2 - 1 &\geq 3 \\
 n(\|x\|_2^2 - 1)^2 &\geq 9n \\
 f(x) + n(\|x\|_2^2 - 1)^2 &\geq \|x\|_2^2 + 9n \\
-  &\geq 2 + 9n
+&\geq 2 + 9n
 \end{split}
    $$
 

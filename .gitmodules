@@ -7,3 +7,6 @@
 [submodule "2A/Appli Web/Projet"]
 	path = 2A/Appli Web/Projet
 	url = https://github.com/baptdes/CARTEL-web-application/
+[submodule "2A/TDL/MiniC"]
+	path = 2A/TDL/MiniC
+	url = https://github.com/LincertainJP/Goblin-Translator

@@ -28,5 +28,3 @@ et $\forall x \in \mathscr{C}$, $\nabla^2 f(x) = I_n$ (def. pos), d'où $f$ stri
 Toutes les contraintes sont affines, donc HQC automatiquement validé.
 
 > 
-
-
