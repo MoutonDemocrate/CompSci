@@ -10,3 +10,6 @@
 [submodule "2A/TDL/MiniC"]
 	path = 2A/TDL/MiniC
 	url = https://github.com/LincertainJP/Goblin-Translator
+[submodule "2A/SMT/Projet"]
+	path = 2A/SMT/Projet
+	url = https://github.com/MoutonDemocrate/ProjetSMT
